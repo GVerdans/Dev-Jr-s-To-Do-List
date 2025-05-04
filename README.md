@@ -1,8 +1,10 @@
-# ToDoList - Dev-Jr's To-Do List
+# ToDoList - Dev-Jr's To-Do List (Em Processo de Melhorias)
 
 ## 📋 Descrição do Projeto
 
 Este é o projeto **ToDoList** desenvolvido como parte do repositório **Dev-Jr's To-Do List**. Utilizando **HTML**, **CSS** e **JavaScript**, o objetivo deste projeto é permitir que os usuários possam adicionar, editar, marcar como concluídas e excluir tarefas de forma interativa e responsiva. Este projeto serve para demonstrar habilidades fundamentais de desenvolvimento web, com foco na manipulação do DOM e na criação de uma interface intuitiva.
+
+**Nota:** Este projeto está **em processo de melhorias**. Novas funcionalidades e ajustes estão sendo implementados continuamente.
 
 ## 🚀 Funcionalidades
 
