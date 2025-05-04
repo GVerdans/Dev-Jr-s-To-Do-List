@@ -30,7 +30,7 @@ Este é o projeto **ToDoList** desenvolvido como parte do repositório **Dev-Jr'
    ```bash
    git clone https://github.com/Dev-Jr-s/Dev-Jr-s-To-Do-List.git
 
-2. Abra o arquivo index.html em seu navegador preferido.
+2. Abra o arquivo index.html em seu navegador de preferência.
 
 3. Interaja com a lista de tarefas! Adicione, edite, marque e remova tarefas com facilidade.
 
@@ -58,6 +58,6 @@ O design está em processo de ajustes para garantir uma experiência 100% respon
 👨‍💻 Autor
 
    - Gabriel Verdan
-     
-     ![LinkedIn](https://www.linkedin.com/in/gabriel-verdan-418129312/)
+
+     [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gabriel-verdan-418129312/)
 
