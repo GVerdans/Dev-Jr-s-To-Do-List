@@ -2,14 +2,15 @@
 
 ## 📋 Descrição do Projeto
 
-Este é o projeto **ToDoList** desenvolvido como parte do repositório **Dev-Jr's To-Do List**. Utilizando **HTML**, **CSS** e **JavaScript**, o objetivo deste projeto é permitir que os usuários possam adicionar, marcar como concluídas e excluir tarefas de forma interativa e responsiva. Este projeto serve para demonstrar habilidades fundamentais de desenvolvimento web, com foco na manipulação do DOM e na criação de uma interface intuitiva.
+Este é o projeto **ToDoList** desenvolvido como parte do repositório **Dev-Jr's To-Do List**. Utilizando **HTML**, **CSS** e **JavaScript**, o objetivo deste projeto é permitir que os usuários possam adicionar, editar, marcar como concluídas e excluir tarefas de forma interativa e responsiva. Este projeto serve para demonstrar habilidades fundamentais de desenvolvimento web, com foco na manipulação do DOM e na criação de uma interface intuitiva.
 
-**Nota:** Este projeto está **em processo de melhorias**. Novas funcionalidades e ajustes estão sendo implementados continuamente.
+**Nota:** Este projeto está **em processo de melhorias**, incluindo ajustes na responsividade. Novas funcionalidades e melhorias na interface estão sendo implementadas continuamente.
 
 ## 🚀 Funcionalidades
 
 - **Adicionar tarefa:** Permite ao usuário adicionar novas tarefas à lista.
 - **Marcar como concluída:** As tarefas podem ser marcadas como feitas, alterando seu estado visual.
+- **Editar tarefa:** O usuário pode editar o conteúdo de uma tarefa existente.
 - **Excluir tarefa:** O usuário pode remover tarefas da lista.
 - **Armazenamento local:** O estado das tarefas é salvo no armazenamento local (`localStorage`), garantindo que as tarefas persistam entre as sessões.
 
@@ -29,32 +30,34 @@ Este é o projeto **ToDoList** desenvolvido como parte do repositório **Dev-Jr'
    ```bash
    git clone https://github.com/Dev-Jr-s/Dev-Jr-s-To-Do-List.git
 
-2. **Abra o arquivo `index.html`** em seu navegador de preferência.
+2. Abra o arquivo index.html em seu navegador preferido.
 
-3. **Interaja com a lista de tarefas!** Adicione, marque e remova tarefas com facilidade.
+3. Interaja com a lista de tarefas! Adicione, edite, marque e remova tarefas com facilidade.
 
 ## 💻 Preview
+Layout Responsivo (Ajustes em andamento)
 
-### Layout Responsivo
+O design está em processo de ajustes para garantir uma experiência 100% responsiva, adaptando-se melhor a diferentes tamanhos de tela. A versão atual já apresenta funcionalidades responsivas, mas melhorias adicionais estão sendo feitas para otimizar a visualização em todos os dispositivos.
 
-O design foi feito para ser **100% responsivo**, adaptando-se a diferentes tamanhos de tela. Veja como ele se comporta em diversos dispositivos:
+   - Desktop: Layout limpo e fácil de usar.
 
-- **Desktop**: Layout limpo e fácil de usar.
-- **Mobile**: Experiência otimizada para telas menores.
+   - Mobile: Experiência otimizada para telas menores, com melhorias em andamento.
 
 ## 🎯 Objetivos de Aprendizado
 
-- Prática de **manipulação do DOM** com JavaScript.
-- Aplicação de **event listeners** para interatividade.
-- Gerenciamento de dados com **localStorage**.
-- Criação de um layout **responsivo** com CSS.
-- Aperfeiçoamento das habilidades em **UX/UI design** para uma experiência agradável.
+   - Prática de manipulação do DOM com JavaScript.
 
-## 👨‍💻 Autor
+   - Aplicação de event listeners para interatividade.
 
-- **Gabriel Verdan**  
-[LinkedIn](https://www.linkedin.com/in/gabriel-verdan-418129312/)
+   - Gerenciamento de dados com localStorage.
 
----
+   - Criação de um layout responsivo com CSS.
 
-> “A simplicidade é a chave para a elegância.” - Leonardo da Vinci
+   - Aperfeiçoamento das habilidades em UX/UI design para uma experiência agradável.
+
+👨‍💻 Autor
+
+   - Gabriel Verdan
+     
+     ![LinkedIn](https://www.linkedin.com/in/gabriel-verdan-418129312/)
+
