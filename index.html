@@ -1,0 +1,57 @@
+<!-- A intenção aqui é fazer do zero, sem BootStrap e TailWind
+ Vou usar GRID no css, pq acho gostosinho ajustar as posições =)
+ Vai ser com HTML, CSS e JS -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List Da Massa</title>
+  <link rel="stylesheet" href="sources/CSS/style_todolist.css" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h2>To Do List da Massa</h2>
+      <nav>Gabriel Verdan</nav>
+    </header>
+
+    <aside>
+      ASIDE, aqui entra um menuzao lateral para o histórico das tasks.
+    </aside>
+
+    <article>
+      <div class="todo">
+        <label for="ipt-todo">Insira sua próxima Tarefa:
+          <br />
+          <input type="text" name="ipt-todo" id="ipt-txt-todo" placeholder="Insira a nova task" class="input-field" />
+          <input type="button" class="button-insert-task" title="Insert" id="btn-insert-task" value="&ldsh;" />
+        </label>
+
+        <ul class="tasks">
+          <!-- <li class="task-li">teste
+              <input type="button" value="&check;" class="btn-task" id="btn-task-done" title="Done">
+              <input type="button" value="X" class="btn-task" id="btn-task-delete" title="Delete">
+            </li> -->
+        </ul>
+
+        <div class="btn-delete-all">
+          <button class="btn-delete-all-tasks" onclick="deleteAllTasks()">
+            Delete All
+          </button>
+        </div>
+      </div>
+    </article>
+
+    <footer>
+      <p>Dev by Gabriel Verdan</p>
+    </footer>
+  </div>
+
+  <script src="./sources/JS/scripts_todolist.js"></script>
+</body>
+
+</html>

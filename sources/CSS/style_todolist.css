@@ -1,0 +1,199 @@
+/* CSS DOCUMENT */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* box-shadow: inset 2px 2px black; */
+}
+
+body {
+    background: linear-gradient(90deg, rgba(10, 176, 242, 1) 0%, rgba(26, 7, 235, 0.79) 50%, rgba(170, 83, 237, 1) 100%);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14pt;
+}
+
+div.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 8fr .5fr;
+    grid-template-areas:
+        "header header header"
+        "aside article article"
+        "footer footer footer";
+    /* width: 100%; */
+    height: 100vh;
+    color: white;
+
+}
+
+header {
+    grid-area: header;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    /* border-bottom: 1px solid black; */
+
+    background: #00000067;
+}
+
+aside {
+    grid-area: aside;
+    background: #00000067;
+
+    /* border-radius: 20px; */
+}
+
+article {
+    grid-area: article;
+    align-content: center;
+    border-radius: 20px;
+
+    /* border: 10px solid #00000067; */
+    /* background-color: magenta; */
+}
+
+div.todo {
+    display: block;
+    background-color: #00000067;
+    box-shadow: 5px 5px 5px #00000067;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+
+    text-align: center;
+    align-content: baseline;
+    /* place-items: center; */
+    margin: auto;
+    padding: 2rem;
+}
+
+input.input-field {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+
+    background: #00000067;
+    color: gray;
+    width: 70%;
+
+    border: none;
+}
+
+input.button-insert-task {
+    background: #00000067;
+    color: white;
+
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+
+    width: 40px;
+    height: 40px;
+
+    cursor: pointer;
+}
+
+
+input.button-insert-task:hover {
+    background-color: white;
+    color: black;
+    transition: .7s;
+}
+
+div.todo>ul {
+    display: block;
+    list-style-type: none;
+
+    background: #00000067;
+    border-radius: 20px;
+
+    /* width: auto; */
+    max-width: 60%;
+    height: auto;
+
+    text-align: center;
+    text-transform: capitalize;
+
+    /* padding: 10px; */
+    margin: 10px auto;
+}
+
+.task-li-false {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.task-li-done {
+    text-decoration: line-through;
+}
+
+input.btn-task {
+    border: none;
+    background: #ffffff9c;
+    border-radius: 50%;
+
+    width: 30px;
+    height: 30px;
+
+    cursor: pointer;
+
+}
+
+input.btn-task:hover:nth-child(2) {
+    /* BTN DELETE TASK */
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    transition: .7s;
+}
+
+input.btn-task:hover:nth-child(1) {
+    /* BTN TASK DONE */
+    color: black;
+    background-color: rgb(30, 255, 0);
+    font-weight: bold;
+    transition: .7s;
+}
+
+div.btn-delete-all {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-delete-all-tasks {
+    display: flex;
+    align-items: center;
+    border: none;
+    width: auto;
+    height: 40px;
+    border-radius: 20px;
+
+    background: #00000067;
+    color: white;
+    font-weight: bold;
+
+    margin: 10px;
+    padding: 20px;
+
+    cursor: pointer;
+
+}
+
+.btn-delete-all-tasks:hover {
+    color: black;
+    background-color: red;
+    transition: .7s;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    align-content: center;
+    background: #00000067;
+}
