@@ -45,6 +45,30 @@ aside {
     /* border-radius: 20px; */
 }
 
+
+/* Estilos do Histórico */
+
+aside > p {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+ul.tasks-history {
+    /* border: 1px solid red; */
+    text-align: center;
+    list-style: square;
+    margin: 10px 50px;
+    font-size: 10pt;
+}
+
+li.li-history {
+    padding: 5px;
+    word-break: break-all;
+    /* border: 1px solid blue ; */
+}
+
 article {
     grid-area: article;
     align-content: center;
@@ -138,7 +162,7 @@ div.todo>ul {
     align-items: center;
     gap: 10px;
     word-break: break-all;
-    color: red;
+    color: green;
 }
 
 input.btn-task {
@@ -207,7 +231,6 @@ footer {
     align-content: center;
     background: #00000067;
 }
-
 
 /*________________RESPONSIVIDADE PARA MOBILE__________________ */
 
@@ -334,3 +357,8 @@ footer {
     }
 
 }
+
+
+
+
+
