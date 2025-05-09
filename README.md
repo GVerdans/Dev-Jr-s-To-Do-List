@@ -10,7 +10,6 @@ Este é o projeto **ToDoList** desenvolvido como parte do repositório **Dev-Jr'
 
 - **Adicionar tarefa:** Permite ao usuário adicionar novas tarefas à lista.
 - **Marcar como concluída:** As tarefas podem ser marcadas como feitas, alterando seu estado visual.
-- **Editar tarefa:** O usuário pode editar o conteúdo de uma tarefa existente.
 - **Excluir tarefa:** O usuário pode remover tarefas da lista.
 - **Armazenamento local:** O estado das tarefas é salvo no armazenamento local (`localStorage`), garantindo que as tarefas persistam entre as sessões.
 
@@ -32,10 +31,10 @@ Este é o projeto **ToDoList** desenvolvido como parte do repositório **Dev-Jr'
 
 2. Abra o arquivo index.html em seu navegador de preferência.
 
-3. Interaja com a lista de tarefas! Adicione, edite, marque e remova tarefas com facilidade.
+3. Interaja com a lista de tarefas! Adicione, marque e remova tarefas com facilidade.
 
 ## 💻 Preview
-Layout Responsivo (Ajustes em andamento)
+Layout Responsivo
 
 O design está em processo de ajustes para garantir uma experiência 100% responsiva, adaptando-se melhor a diferentes tamanhos de tela. A versão atual já apresenta funcionalidades responsivas, mas melhorias adicionais estão sendo feitas para otimizar a visualização em todos os dispositivos.
 
