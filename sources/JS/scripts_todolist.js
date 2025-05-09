@@ -47,14 +47,26 @@ function mostrarHistorico() {
 }
 
 function jogarItensNoArrayPrincipal() {
-  yarraDosItens.push({
-    task: todoInput.value,
-    status: false,
-  });
 
-  todoInput.value = "";
+  todoInput.classList.replace('input-field-alert', 'input-field');
+  todoInput.setAttribute("placeholder", "Insira sua Próxima Tarefa ! !");
 
-  mostrarTarefas();
+  if(!todoInput.value.trim()){
+    // alert("Insira uma Task Válida !");
+    todoInput.classList.replace('input-field', 'input-field-alert');
+    todoInput.setAttribute("placeholder", "INSIRA UMA TASK VÁLIDA !");
+    return;
+  }
+    
+    yarraDosItens.push({
+      task: todoInput.value,
+      status: false,
+    });
+    
+    todoInput.value = "";
+    
+    mostrarTarefas();
+  
 }
 
 function deleteAllTasks() {
@@ -90,6 +102,12 @@ function reloadStorage() {
   }
 
   mostrarTarefas();
+  mostrarHistorico();
+}
+
+function deleteAllHistory(){
+  console.log('to aqui')
+  yarraDoAside.splice(0, yarraDoAside.length);
   mostrarHistorico();
 }
 

@@ -12,6 +12,7 @@ body {
     background: linear-gradient(90deg, rgba(10, 176, 242, 1) 0%, rgba(26, 7, 235, 0.79) 50%, rgba(170, 83, 237, 1) 100%);
     font-family: 'Courier New', Courier, monospace;
     font-size: 14pt;
+    height: 80;
 }
 
 div.container {
@@ -38,21 +39,32 @@ header {
     background: #00000067;
 }
 
+/* Styles of History */
 aside {
     grid-area: aside;
     background: #00000067;
+    overflow: scroll;
+
+    /* border: 1px solid red; */
 
     /* border-radius: 20px; */
 }
 
-
-/* Estilos do Histórico */
-
 aside > p {
-    text-align: center;
-    border-bottom: 1px solid grey;
-    padding-bottom: 10px;
     font-weight: bold;
+    text-align: center;
+    /*Esses dois de baixo aqui só pra centralizar o texto --' */
+    height: 35px;
+    line-height: 35px;
+
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+    
+    position: sticky;
+    top: 0;
+
+    background-color: rgb(20, 136, 231);
+    /* z-index: 1000; */
 }
 
 ul.tasks-history {
@@ -61,13 +73,53 @@ ul.tasks-history {
     list-style: square;
     margin: 10px 50px;
     font-size: 10pt;
+
+    height: 83%;
+
 }
 
 li.li-history {
     padding: 5px;
     word-break: break-all;
+    text-transform: capitalize;
     /* border: 1px solid blue ; */
 }
+
+div.container-btn-delete-history {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: sticky;
+    bottom: 0;
+    background-color:rgb(33, 141, 230); ;
+    /* border: 1px solid red; */
+}
+
+input.btn-delete-history {
+    width: 10em;
+    height: 3em;
+
+    background: none;
+    border: none;
+    /* border-radius: 10px; */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    margin: 20px auto;
+}
+
+input.btn-delete-history:hover {
+    color: red;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    transition: .6s;
+
+}
+
+/* End of History */
 
 article {
     grid-area: article;
@@ -88,6 +140,7 @@ div.todo {
 
     text-align: center;
     align-content: baseline;
+    text-transform: capitalize;
     /* place-items: center; */
     margin: auto;
     padding: 3rem;
@@ -104,6 +157,24 @@ input.input-field {
 
     border: none;
     
+}
+
+input.input-field-alert {
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 20px;
+
+    background: #00000067;
+    color: red;
+    font-weight: bold;
+    width: 70%;
+
+    border: none;
+    
+}
+
+input.input-field-alert {
+    color: red;
 }
 
 input.button-insert-task {
