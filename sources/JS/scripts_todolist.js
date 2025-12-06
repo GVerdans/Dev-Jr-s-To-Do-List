@@ -54,7 +54,7 @@ function jogarItensNoArrayPrincipal() {
   if(!todoInput.value.trim()){
     // alert("Insira uma Task Válida !");
     todoInput.classList.replace('input-field', 'input-field-alert');
-    todoInput.setAttribute("placeholder", "INSIRA UMA TASK VÁLIDA !");
+    todoInput.setAttribute("placeholder", "ENTER A VALID TASK !");
     return;
   }
     
