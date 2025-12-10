@@ -1,0 +1,30 @@
+{
+  "name": "dev-jr-s-to-do-list",
+  "version": "1.0.0",
+  "description": "Este é o projeto **ToDoList** desenvolvido como parte do repositório **Dev-Jr's To-Do List**. Utilizando **HTML**, **CSS** e **JavaScript**, o objetivo deste projeto é permitir que os usuários possam adicionar, editar, marcar como concluídas e excluir tarefas de forma interativa e responsiva. Este projeto serve para demonstrar habilidades fundamentais de desenvolvimento web, com foco na manipulação do DOM e na criação de uma interface intuitiva.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack -w",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GVerdans/Dev-Jr-s-To-Do-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/GVerdans/Dev-Jr-s-To-Do-List/issues"
+  },
+  "homepage": "https://github.com/GVerdans/Dev-Jr-s-To-Do-List#readme",
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/preset-env": "^7.28.5",
+    "babel-loader": "^10.0.0",
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1"
+  }
+}
