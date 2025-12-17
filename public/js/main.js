@@ -11,7 +11,7 @@ timer = new Timer(selectTimer.value, timerOutput);
 const todoInput = document.querySelector(".inputTxtTask");
 const todoOutput = document.querySelector(".ul-todo-output");
 let list = [];
-const todo = new Todo(list, todoOutput);
+const todo = new Todo(todoOutput);
 
 
 document.addEventListener("click", (e) => {
@@ -44,15 +44,12 @@ document.addEventListener("click", (e) => {
 
     // Remove task
     if (e.target.classList.contains("btn-remove-task")) {
-        todo.removeTask(e.target.id);
+        todo.removeTask(e.target.dataset.index);
     }
 
     // Task Done
     if (e.target.classList.contains("btn-done-task")) {
-        const li = e.target.closest("li");
-        const p = li.querySelector("p");
-
-        todo.doneTask(p);
+        todo.doneTask(e.target.dataset.index);
     }
 
     // -- End of Todo Events -- //
