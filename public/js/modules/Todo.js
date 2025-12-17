@@ -1,37 +1,39 @@
 export default class Todo {
-    constructor(task, list, elementOutput) {
-        this.task = task;
+    constructor(list, elementOutput) {
         this.list = list;
         this.elementOutput = elementOutput;
     }
 
-    addToList() {
-        this.list.push(this.task);
+    addToList(task) {
+        this.list.push(task);
 
         this.renderList();
     }
 
-    removeTask(id) {
+    removeTask(index) {
+        this.list.splice(index, 1);
+        this.renderList();
+    }
 
+    doneTask(p){
+        p.classList.toggle("text-decoration-line-through");
+        p.classList.toggle("text-danger");
     }
 
     renderList() {
         this.elementOutput.innerHTML = "";
         this.list.forEach((task, index) => {
             this.elementOutput.innerHTML += `
-                <li class="list-group-item d-flex align-items-center" id="${index}"> ${task}
+                <li class="list-group-item d-flex align-items-center" id="${index}">
+                <p class="mb-0 p-task">${task}</p> 
                 
                     <div class="ms-auto">
-                        <button type="button" class="btn btn-success align-end">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
-                            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/>
-                            </svg>
+                        <button type="button" class="btn btn-outline-success align-end btn-done-task" id="${index}">
+                            &#10003;
                         </button>
 
-                        <button type="button" class="btn btn-danger align-end">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
-                            </svg>
+                        <button type="button" class="btn btn-outline-danger align-end btn-remove-task fw-bold" id="${index}">
+                            x
                         </button>
                     </div>
                 </li>
